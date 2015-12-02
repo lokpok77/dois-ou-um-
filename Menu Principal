@@ -32,7 +32,7 @@
        android:text="Versao Free. Compre a Versao Gold."
        android:textColor="@android:color/background_light" />
 
-//botao para versão gold
+//botão para versão ouro
    <Button
        android:id="@+id/button1"
        android:layout_width="wrap_content"
