@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+
+//texto referente as vantagens
+   <TextView
+       android:id="@+id/textView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="16dp"
+       android:text="Com o Pacote Gold Master Blaster. Voce Tem Chance Maior De Ganhar de Jesus!! Alem de ter desconto com proximas DLC'S que possam vir."
+       android:textColor="@android:color/background_light"
+       android:textSize="20sp" />
+
+//
+   <Button
+       android:id="@+id/button1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_alignRight="@+id/textView1"
+       android:onClick="voltar"
+       android:textColor="@android:color/background_light"
+       android:text="Voltar." />
+
+
+//botão para efetuar a compra
+   <Button
+       android:id="@+id/button2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBottom="@+id/button1"
+       android:layout_alignLeft="@+id/textView1"
+       android:onClick="compra"
+       android:text="Comprar"
+       android:textColor="@android:color/background_light" />
+
+//texto de alerta kkk
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/button1"
+       android:layout_alignLeft="@+id/button2"
+       android:text=" Não Nos Responsabilizamos Por Eventuas Vicios ou o Seu Dinheiro de Volta "
+       android:textColor="@android:color/background_light"
+       android:textSize="10sp" />
+
+
+//imagem aleatória
+   <ImageView
+       android:id="@+id/imageView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/textView1"
+       android:layout_centerHorizontal="true"
+       android:src="@drawable/barrag" />
+
+//texto sobre o preço
+   <TextView
+       android:id="@+id/textView3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/imageView1"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="20dp"
+       android:textColor="@android:color/background_light"
+       android:text="Com o pequeno custo de R$5,00 ." />
+
+</RelativeLayout>
